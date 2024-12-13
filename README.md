@@ -51,7 +51,9 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 
 ## CONCLUSION
 
-
+## Challenges
+* having trouble in troubleshootiung 
+* cv2.show() does not work without install
 
 ## ADDITIONAL MATERIALS
 
