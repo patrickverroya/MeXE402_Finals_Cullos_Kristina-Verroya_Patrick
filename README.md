@@ -57,7 +57,36 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 
 # Code
 
-*Import Necessary Libraries
+- **Importing Libraries**
+  - To bring in the necessary functionality for image handling, file searching, and face detection.
+
+```python
+
+#Import open cv
+import cv2
+
+#Folder library
+import glob
+```
+
+- **Defining Folder and Image Location**
+  - Define the folder containing images and retrieve all image files (.jpg and .png).
+  
+```python
+# Specify the folder containing images
+folder_path = "Harry Potter Group Photo"  # Replace with your folder path
+
+# Use glob to get a list of all image files in the folder (e.g., jpg, png, etc.)
+image_paths = glob.glob(folder_path + "/*.jpg") + glob.glob(folder_path + "/*.png")  # Adjust extensions as needed
+
+# Sort the image paths (optional, for consistent order)
+image_paths.sort()
+```
+
+
+
+
+
 
 
 
