@@ -226,6 +226,7 @@ cv2.destroyAllWindows()
 ## Expected Outcome
 - Here is the outcome of our project in where we detected the faces of Harry Potter Casts:
 ![alt text](image.png)
+![alt text](image-1.png)
 
 
 
