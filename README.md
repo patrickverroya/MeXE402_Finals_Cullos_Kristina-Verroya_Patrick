@@ -233,7 +233,7 @@ cv2.destroyAllWindows()
 
   ---
 
-  * Images after tweaking the settings of the variables under `faces = face_cascade.detectMultiScale`, such as `scaleFactor`, `minNeighbors`, `minSize`, and `maxSize`, for individual pictures.
+* Images after tweaking the settings of the variables under `faces = face_cascade.detectMultiScale`, such as `scaleFactor`, `minNeighbors`, `minSize`, and `maxSize`, for individual pictures.
 
   ![alt text](![After](https://github.com/user-attachments/assets/6bacdf45-33c0-4b23-9f6e-fc5df742c221)
 
