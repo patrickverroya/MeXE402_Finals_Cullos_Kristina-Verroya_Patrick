@@ -70,7 +70,7 @@ import cv2
 import glob
 ```
 
-### Defining Folder and Image Location
+### **Defining Folder and Image Location**
 - Define the folder containing images and retrieve all image files (.jpg and .png).
   
 ```python
@@ -84,8 +84,7 @@ image_paths = glob.glob(folder_path + "/*.jpg") + glob.glob(folder_path + "/*.pn
 image_paths.sort()
 ```
 
-
-- **Load Haar Cascade for Face Detection**
+### **Load Haar Cascade for Face Detection**
 - Load the Haar Cascade XML file used for detecting frontal faces.
 
 ```python
@@ -94,7 +93,7 @@ haarcascade = "haarcascade_frontalface_default.xml"
 face_cascade = cv2.CascadeClassifier(haarcascade)
 ```
 
-- **Loop Through and Read Images**
+### **Loop Through and Read Images**
 - Start a loop to process and display each image.
 ```python
 while True:
@@ -108,7 +107,7 @@ while True:
         continue
 ```
 
-- **Resizing and Converting Images to Greyscale**
+### **Resizing and Converting Images to Greyscale**
 - Resize the image for better viewing and convert it to grayscale for face detection.
 
 ```python
@@ -124,7 +123,7 @@ while True:
         gray_image = cv2.cvtColor(image_resized, cv2.COLOR_BGR2GRAY)
 ```
 
-- **Apply Face Detection**
+### **Apply Face Detection**
 - Detect faces using face_cascade.detectMultiScale() with parameters correspond and unique for the image's index.
 ```python
         # Apply different parameters for face detection based on the index
@@ -142,7 +141,7 @@ while True:
             )
 ```
 
-- **Draw Rectangles Around Detected Faces**
+### **Draw Rectangles Around Detected Faces**
 - Highlight detected faces by drawing green rectangles on the image.
 ```python
         # Draw rectangles around detected faces
@@ -151,14 +150,14 @@ while True:
 
 ```
 
-- **Display the Image**
+### **Display the Image**
 - Show the processed image in an OpenCV window.
 ```python
   # Display the image with detected faces
   cv2.imshow("Photo Viewer with Face Detection", image_resized)
 ```
 
-- **Photo Viewer Controls**   
+### **Photo Viewer Controls**   
 - Use keyboard inputs to navigate between images or exit the program.
 ```python
     except Exception as e:
@@ -179,7 +178,7 @@ while True:
         index = (index - 1) % len(image_paths)  # Move to previous image
 ```
 
-- **Exit**   
+### **Exit**   
 - Release all resources by closing the OpenCV windows or pressing esc.
 
 ```python
