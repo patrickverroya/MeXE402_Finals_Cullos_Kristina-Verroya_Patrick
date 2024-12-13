@@ -51,9 +51,44 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 
 ## CONCLUSION
 
+## Findings
+
+###  Face Detection Works 
+* With the help of proper values and configuration, face detection works great and a usefultool.
+
+### scaleFactor
+* The higher scaleFactor value, the less accurate the result
+* The lower the scaleFactor value, the more accurate the resul
+
+### Interactive Navigation
+* Interative navigation adds more interest in learning face detection using haarcascade
+
+
 ## Challenges
-* having trouble in troubleshootiung 
-* cv2.show() does not work without install
+### Parameter Sensitivity
+* Tweaking and changing the values for scaleFactor, minNeighbors, minSize, and maxSize can be trocky and overwhelming at first
+
+### Manual Tweaking
+* Since each photo is unique, the value of scaleFactor, minNeighbors, minSize, and maxSize  must be et individually. 
+
+### Limited Face Detection Accuracy
+* Without proper corrective measure and tweaking the accuracy of Haarcascade in detecting faces is not that great.
+
+### Code Errors
+* Barriers such us coding environment is also a challenge, codespaec in VS code does not work well with opencv.
+
+
+## Outcomes
+
+### Highlighted Face
+* The haarcascade successfully detect and highlight pictures of Harry Potter Cast but not includes face recognition.
+
+### Accuracy
+* With proper configuration the total accuracy of face detection using haarcascde on project is around 95%
+
+### Accomplishment
+* Objectives are fully fulfilled in this project.
+
 
 ## ADDITIONAL MATERIALS
 
