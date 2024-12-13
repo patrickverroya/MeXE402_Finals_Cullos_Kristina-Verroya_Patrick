@@ -57,7 +57,7 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 
 # Code
 
-### Importing Libraries
+### **Importing Libraries**
 
 - To bring in the necessary functionality for image handling, file searching, and face detection.
 
