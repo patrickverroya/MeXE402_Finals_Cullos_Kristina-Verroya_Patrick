@@ -54,7 +54,7 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 ## Findings
 
 ###  Face Detection Works 
-* with proper values and configuration, face detection works great and a usefultool.
+* With the help of proper values and configuration, face detection works great and a usefultool.
 
 ### scaleFactor
 * The higher scaleFactor value, the less accurate the result
@@ -81,10 +81,10 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 ## Outcomes
 
 ### Highlighted Face
-* The haarcascade successfully detect and highlight pictures of Harry Potter Cast but not includes recognition.
+* The haarcascade successfully detect and highlight pictures of Harry Potter Cast but not includes face recognition.
 
 ### Accuracy
-* With proper configuration the total accuracy of this project is around 95%
+* With proper configuration the total accuracy of face detection using haarcascde on project is around 95%
 
 ### Accomplishment
 * Objectives are fully fulfilled in this project.
