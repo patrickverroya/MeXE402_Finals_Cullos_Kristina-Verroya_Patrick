@@ -58,7 +58,7 @@ Dor this project here are the objectives that studsents aim to achieve for the f
 # Code
 
 - **Importing Libraries**
-  - To bring in the necessary functionality for image handling, file searching, and face detection.
+- To bring in the necessary functionality for image handling, file searching, and face detection.
 
 ```python
 
@@ -70,7 +70,7 @@ import glob
 ```
 
 - **Defining Folder and Image Location**
-  - Define the folder containing images and retrieve all image files (.jpg and .png).
+- Define the folder containing images and retrieve all image files (.jpg and .png).
   
 ```python
 # Specify the folder containing images
@@ -82,6 +82,114 @@ image_paths = glob.glob(folder_path + "/*.jpg") + glob.glob(folder_path + "/*.pn
 # Sort the image paths (optional, for consistent order)
 image_paths.sort()
 ```
+
+
+- **Load Haar Cascade for Face Detection**
+- Load the Haar Cascade XML file used for detecting frontal faces.
+
+```python
+ # Load Haar Cascade for face detection
+haarcascade = "haarcascade_frontalface_default.xml"
+face_cascade = cv2.CascadeClassifier(haarcascade)
+```
+
+- **Loop Through and Read Images**
+- Start a loop to process and display each image.
+```python
+while True:
+    # Load the current image
+    image = cv2.imread(image_paths[index])
+
+    # Check if the image was loaded successfully
+    if image is None:
+        print(f"Error: Could not load image {image_paths[index]}. Skipping to next image.")
+        index = (index + 1) % len(image_paths)
+        continue
+```
+
+- **Resizing and Converting Images to Greyscale**
+- Resize the image for better viewing and convert it to grayscale for face detection.
+
+```python
+    try:
+        # Resize image for better organization
+        scale_percent = 50  # Resize to 50% of the original size (adjust as needed)
+        width = int(image.shape[1] * scale_percent / 100)
+        height = int(image.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        image_resized = cv2.resize(image, dim)
+
+        # Convert the image to grayscale for face detection
+        gray_image = cv2.cvtColor(image_resized, cv2.COLOR_BGR2GRAY)
+```
+
+- **Apply Face Detection**
+- Detect faces using face_cascade.detectMultiScale() with parameters correspond and unique for the image's index.
+```python
+        # Apply different parameters for face detection based on the index
+        if index == 0:  # If this is the first image (index starts at 0)
+            faces = face_cascade.detectMultiScale(
+                gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(70, 70)
+            )
+        elif index == 1:
+            faces = face_cascade.detectMultiScale(
+                gray_image, scaleFactor=1.1, minNeighbors=8, minSize=(50, 50)
+            )
+        else:
+            faces = face_cascade.detectMultiScale(
+                gray_image, scaleFactor=1.068, minNeighbors=5, minSize=(10, 10)
+            )
+```
+
+- **Draw Rectangles Around Detected Faces**
+- Highlight detected faces by drawing green rectangles on the image.
+```python
+        # Draw rectangles around detected faces
+        for (x, y, w, h) in faces:
+            cv2.rectangle(image_resized, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
+```
+
+- **Display the Image**
+- Show the processed image in an OpenCV window.
+```python
+  # Display the image with detected faces
+  cv2.imshow("Photo Viewer with Face Detection", image_resized)
+```
+
+- **Photo Viewer Controls**   
+- Use keyboard inputs to navigate between images or exit the program.
+```python
+    except Exception as e:
+        print(f"Error processing image {image_paths[index]}: {e}")
+        index = (index + 1) % len(image_paths)
+        continue
+
+    # Wait for a key press
+    key = cv2.waitKey(0)
+
+    # Navigate based on key press
+    if key == 27:  # ESC key to exit
+        print("Exiting Photo Viewer.")
+        break
+    elif key == ord('d') or key == 83:  # Right arrow or 'D' key
+        index = (index + 1) % len(image_paths)  # Move to next image
+    elif key == ord('a') or key == 81:  # Left arrow or 'A' key
+        index = (index - 1) % len(image_paths)  # Move to previous image
+```
+
+- **Exit**   
+- Release all resources by closing the OpenCV windows or pressing esc.
+
+```python
+# Close all OpenCV windows
+cv2.destroyAllWindows()
+```
+
+
+
+
+
 
 
 
