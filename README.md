@@ -54,11 +54,11 @@ For this project, the objectives students aim to achieve in the face detection p
 
 ## CONCLUSION
 
-The project "Detecting Faces of Harry Potter Characters" successfully applied OpenCV to create a themed face detection system. By focusing on dataset preparation, preprocessing, and model selection, we built a solution capable of identifying faces of Harry Potter characters.
+* The project "Detecting Faces of Harry Potter Characters" successfully applied OpenCV to create a themed face detection system. By focusing on dataset preparation, preprocessing, and model selection, we built a solution capable of identifying faces of Harry Potter characters.
 
-Key insights revealed the effectiveness of Haar cascades and deep learning-based models for face detection in controlled environments. However, challenges such as lighting, pose, and image quality variations emphasized the importance of thorough preprocessing and fine-tuning. Techniques like data augmentation and parameter optimization played a significant role in enhancing model performance.
+* Key insights revealed the effectiveness of Haar cascades and deep learning-based models for face detection in controlled environments. However, challenges such as lighting, pose, and image quality variations emphasized the importance of thorough preprocessing and fine-tuning. Techniques like data augmentation and parameter optimization played a significant role in enhancing model performance.
 
-The results highlight OpenCV's flexibility in addressing specialized detection tasks while providing valuable insights into the complexities of real-world face detection. This project met its technical goals and demonstrated the creative possibilities of computer vision. Future work could explore integrating character recognition or emotion analysis to expand the system's functionality.
+* The results highlight OpenCV's flexibility in addressing specialized detection tasks while providing valuable insights into the complexities of real-world face detection. This project met its technical goals and demonstrated the creative possibilities of computer vision. Future work could explore integrating character recognition or emotion analysis to expand the system's functionality.
 
 ## Findings
 
@@ -239,13 +239,13 @@ cv2.destroyAllWindows()
 
 * Images before tweaking the settings of the variables under `faces = face_cascade.detectMultiScale`, such as `scaleFactor`, `minNeighbors`, `minSize`, and `maxSize`, for individual pictures.
 
-  ![alt text](![Before](https://github.com/user-attachments/assets/040a6323-f4e5-4687-9683-794f2995b1a8)
+  ![Before](https://github.com/user-attachments/assets/040a6323-f4e5-4687-9683-794f2995b1a8)
 
   ---
 
 * Images after tweaking the settings of the variables under `faces = face_cascade.detectMultiScale`, such as `scaleFactor`, `minNeighbors`, `minSize`, and `maxSize`, for individual pictures.
 
-  ![alt text](![After](https://github.com/user-attachments/assets/6bacdf45-33c0-4b23-9f6e-fc5df742c221)
+  ![After](https://github.com/user-attachments/assets/6bacdf45-33c0-4b23-9f6e-fc5df742c221)
 
 
 
