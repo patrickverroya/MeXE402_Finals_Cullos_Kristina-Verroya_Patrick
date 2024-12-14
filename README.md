@@ -20,7 +20,7 @@ This project, titled *"Detecting Faces of Harry Potter Characters,"* applies fac
 
 ## Objectives
 
-For this project here are the objectives that studsents aim to achieve for the face detection project using OpenCV:
+For this project, the objectives students aim to achieve in the face detection project using OpenCV are as follows:
 
 * To develop a Python program using OpenCV that accurately detects and highlights human faces in real-time or static images.
 * To implement a Haar Cascade Clasifier detection algorithm for detecting faces from Harry Potter.
