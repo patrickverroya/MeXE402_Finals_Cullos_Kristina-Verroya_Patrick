@@ -29,10 +29,11 @@ For this project here are the objectives that studsents aim to achieve for the f
 
 ## PROJECT METHODS
 
-- **Dataset Collection**:  
-  - Gather images of Harry Potter characters from various sources.  
-  - Ensure diversity in lighting, angles, and expressions within the dataset.  
-  - Organize images into labeled categories for each character.  
+- **Learning Face Detection**:  
+  - Watching videos related to face detection using Haarcascade  
+  - Learning how to integrate new learning with the previous knowledge
+  - Experimenting with OpenCV to implement and test face detection techniques
+
 
 - **Dataset Collection**:  
   - Gather images of Harry Potter characters from various sources.  
@@ -40,7 +41,7 @@ For this project here are the objectives that studsents aim to achieve for the f
   - Organize images into labeled categories for each character.  
 
 - **Implementation and Deployment**:  
-  - Develop a script or application using OpenCV to detect faces in real-time or static images.  
+  - Develop a script or code using OpenCV to detect faces in real-time or static images.  
   - Integrate functionality to highlight detected faces and label corresponding characters.  
 
 - **Testing and Validation**:  
