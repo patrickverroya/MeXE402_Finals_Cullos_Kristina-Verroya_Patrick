@@ -223,7 +223,8 @@ while True:
 cv2.destroyAllWindows()
 ```
 
----
+
+
 
 ### Results generated during the project
 
